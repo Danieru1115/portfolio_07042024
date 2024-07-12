@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'purple1' : "#6921C5"
+
+      },
       boxShadow: {
         'header' : '0 1px 12px 0 rgba(105, 33, 197, 0.3)',
         'headerHover' : '0 2px 14px 0 rgba(105, 33, 197, 0.5)',
