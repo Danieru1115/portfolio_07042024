@@ -32,7 +32,7 @@ const Header = () => {
   }
 
   return (
-    <div className={`w-full h-24 bg-white py-6 px-8 flex justify-start items-center gap-6 rounded-b-3xl shadow-header hover:shadow-headerHover transition-all fixed ${scrolled ? 'top-0' : ''}`}>
+    <div className={`z-50 w-full h-24 bg-white py-6 px-8 flex justify-start items-center gap-6 rounded-b-3xl shadow-header hover:shadow-headerHover transition-all fixed ${scrolled ? 'top-0' : ''}`}>
       <div className='w-12 h-full flex justify-center items-center' onClick={scrollToTop}>
       <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
     <rect y="26" width="36.77" height="36.77" rx="6.118" transform="rotate(-45 0 26)" fill="url(#3sb1batm1a)"/>
@@ -47,7 +47,7 @@ const Header = () => {
       </div>
       <div className='w-full h-full bg-white flex items-center justify-end gap-6 p-2'>
       {navigationData.map((item, index) => (
-          <button className='text-black hover:text-purple1 transition-all font-normal' key={item.title} onClick={() => scrollClick(index)}>
+          <button className='text-black3 hover:text-purple1 transition-all font-normal' key={item.title} onClick={() => scrollClick(index)}>
             {item.title}
           </button>
         ))}
