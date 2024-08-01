@@ -9,7 +9,12 @@ module.exports = {
     extend: {
       colors: {
         'purple1' : "#6921C5",
-        'black3' : "#1f1f1f"
+        'purple2' : "#9421dc",
+        'black3' : "#1f1f1f",
+        'black4' : "#1e1e1e",
+        'divider1' : "#cac4d0",
+        'divider2' : "#585489",
+        'secondary1' : "#786aa0" 
 
       },
       boxShadow: {
