@@ -2,6 +2,9 @@
 import Header from "@/components/Header";
 import Pay from "@/components/Pay";
 import Head from "@/components/Head";
+import previousWork from "@/components/previousWork";
+import experienceWork from "@/components/Experience";
+import contactInfo from "@/components/Contact";
 import Image from "next/image";
 
 export default function Home() {
@@ -11,6 +14,9 @@ export default function Home() {
       <Header/>
       <Head/>
       <Pay/>
+      <previousWork/>
+      <experienceWork/>
+      <contactInfo/>
     </main>
   );
 }
