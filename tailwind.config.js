@@ -14,7 +14,9 @@ module.exports = {
         'black4' : "#1e1e1e",
         'divider1' : "#cac4d0",
         'divider2' : "#585489",
-        'secondary1' : "#786aa0" 
+        'secondary1' : "#786aa0",
+        'secondary2' : "#b2a7d1",
+        'border1' : "#e3e0eb"
 
       },
       boxShadow: {

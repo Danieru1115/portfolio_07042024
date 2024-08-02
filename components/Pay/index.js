@@ -43,7 +43,7 @@ const Pay = () => {
     </div>
     <div className="w-full h-[50rem] flex justify-center items-center gap-16 px-16 py-12">
       {PaymentInfo.map((item, index) => (
-        <div key={index} className='w-1/3 h-[600px] group rounded-3xl hover:w-[640px] transition-all duration-500 p-8 flex justify-center items-center flex-col border-solid border-purple1 border-2'>
+        <div key={index} className='w-1/3 h-[600px] cursor-pointer group rounded-3xl hover:w-[640px] transition-all duration-500 p-8 flex justify-center items-center flex-col border-solid border-border1 border'>
           <div className='w-full h-3/4 flex justify-start items-start flex-col gap-8 mt-4'>
             <div className=''>
               <h2 className='text-2xl font-semibold text-purple2'>{item.title}</h2>
@@ -59,7 +59,7 @@ const Pay = () => {
             </div>
           </div>
           <div className='w-full h-1/4 flex justify-center items-center'>
-          <button onClick={scrollClick} className='flex group-hover:bg-purple2 group-hover:text-white  justify-center items-center w-full h-10 bg-white border-2 border-solid border-purple1 p-3 rounded-lg text-black3'>More Info</button>
+          <button onClick={scrollClick} className='flex group-hover:bg-purple2 group-hover:text-white  justify-center items-center w-full h-10 bg-white border border-solid border-purple1 p-3 rounded-lg text-black3'>More Info</button>
           </div>
         </div>
       ))}
