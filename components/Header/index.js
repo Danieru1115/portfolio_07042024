@@ -3,19 +3,19 @@ const Header = () => {
   const navigationData = [
     {
       title: 'Pricing',
-      coordinates: 100,
+      coordinates: 1000,
     },
     {
       title: 'Previous Work',
-      coordinates: 200,
+      coordinates: 2000,
     },
     {
       title: 'Experience',
-      coordinates: 300,
+      coordinates: 3000,
     },
     {
       title: 'Contact',
-      coordinates: 400,
+      coordinates: 4000,
     },
   ]
   const [scrolled, setScrolled] = useState(false);

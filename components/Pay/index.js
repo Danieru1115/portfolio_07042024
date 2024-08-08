@@ -8,29 +8,30 @@ const Pay = () => {
   }
   const PaymentInfo = [
     {
-      title: 'Mobile Application',
-      price: '499',
-      content: [
-        'UI/UX Design',
-        'Mobile Application',
-        'Backend Development'
-      ]
-    },
-    {
-      title: 'Dynamic Website',
+      title: 'Software Development',
       price: '399',
       content: [
-        'UI/UX Design',
-        'Frontend Development',
-        'Backend Development'
+        'Mobile App Development',
+        'Windows App Development',
+        'Java Development'
       ]
     },
     {
-      title: 'Static Website',
+      title: 'Website Development',
+      price: '199',
+      content: [
+        'UI/UX Design',
+        'Dynamic Website',
+        'Static Website'
+      ]
+    },
+    {
+      title: 'Art Commission',
       price: '99',
       content: [
         'UI/UX Design',
-        'Frontend Development'
+        '2D Illustration',
+        '3D Sculting'
       ]
     }
   ]

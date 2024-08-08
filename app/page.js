@@ -7,6 +7,7 @@ import ExperienceWork from "@/components/Experience";
 import ContactInfo from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Image from "next/image";
+import ArtWork from "@/components/artWork";
 
 export default function Home() {
   
@@ -16,6 +17,7 @@ export default function Home() {
       <Head/>
       <Pay/>
       <PreviousWork/>
+      <ArtWork/>
       <ExperienceWork/>
       <ContactInfo/>
       <Footer/>

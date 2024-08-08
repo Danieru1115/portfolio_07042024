@@ -40,59 +40,34 @@ const PreviousWork = () => {
         }
     ]
     const marqueeRef = useRef(null);
-    const [isPaused, setIsPaused] = useState(false);
-    const [offset, setOffset] = useState(0);
-  
-    useEffect(() => {
-      const marquee = marqueeRef.current;
-      if (marquee) {
-        marquee.addEventListener('mouseenter', handlePause);
-        marquee.addEventListener('mouseleave', handleResume);
-      }
-      return () => {
-        if (marquee) {
-          marquee.removeEventListener('mouseenter', handlePause);
-          marquee.removeEventListener('mouseleave', handleResume);
-        }
-      };
-    }, []);
-  
-    const handlePause = () => {
-      setIsPaused(true);
-      setOffset(marqueeRef.current.scrollLeft);
-    };
-  
-    const handleResume = () => {
-      setIsPaused(false);
-    };
   
     return (
       <div className='w-full h-[375px] px-12 mb-8'>
         <div className='w-full h-8 flex justify-center items-start flex-col gap-2'>
           <div className='w-full h-0.5 bg-divider1 rounded-sm'></div>
-          <h5 className='text-divider2 text-sm font-medium'>Previous Work</h5>
+          <h5 className='text-divider2 text-sm font-medium'>Tech Related Work</h5>
         </div>
         <div className='w-full h-[375px] overflow-x-hidden mt-4'>
-          <div ref={marqueeRef} className={`w-max gap-8 flex ${isPaused ? '' : 'animate-marquee'}`}>
+          <div ref={marqueeRef} className={'w-max gap-8 flex animate-marquee'}>
             {WorkInfo.map((item, index) => (
-              <div href={item.link} className='w-60 h-auto rounded-2xl p-4 border border-solid border-border1 cursor-pointer' key={index}>
+              <a href={item.link} target="_blank" rel="noopener noreferrer" className='group w-60 h-auto rounded-2xl p-4 border border-solid border-border1 cursor-pointer' key={index}>
                 <img
                   src={item.image}
                   alt={item.title}
-                  className='w-full h-[247px] rounded-2xl object-cover'
+                  className='group-hover:scale-105 transition-all w-full h-[247px] rounded-2xl object-cover'
                 />
                 <div className='gap-2 mt-4'>
                   <h2 className='text-secondary1 transition-all font-normal text-base' key={item.title}>
-                    {item.title}
-                  </h2>
-                  <h2 className='text-black3 transition-all text-base font-semibold' key={item.roles}>
-                    {item.roles}
-                  </h2>
-                  <h2 className='text-secondary2 transition-all font-normal text-sm' key={item.company}>
                     {item.company}
                   </h2>
+                  <h2 className='text-black3 transition-all text-base font-semibold' key={item.roles}>
+                    {item.title}
+                  </h2>
+                  <h2 className='text-secondary2 transition-all font-normal text-sm' key={item.company}>
+                    {item.roles}
+                  </h2>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
