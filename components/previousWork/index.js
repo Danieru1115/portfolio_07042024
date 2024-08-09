@@ -31,6 +31,7 @@ const PreviousWork = () => {
             company : 'Paimatrix',
             link : 'https://www.paimatrix.com'
         },
+        
         {
             image : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWS6Wi0iQbjfNfV1CYN6N8nefO5NO7kDCM_w&s',
             title : 'paimatrix.com',
@@ -48,7 +49,7 @@ const PreviousWork = () => {
           <h5 className='text-divider2 text-sm font-medium'>Tech Related Work</h5>
         </div>
         <div className='w-full h-[375px] overflow-x-hidden mt-4'>
-          <div ref={marqueeRef} className={'w-max gap-8 flex animate-marquee'}>
+          <div ref={marqueeRef} className={'w-max gap-8 flex animate-marquee ml-8'}>
             {WorkInfo.map((item, index) => (
               <a href={item.link} target="_blank" rel="noopener noreferrer" className='group w-60 h-auto rounded-2xl p-4 border border-solid border-border1 cursor-pointer' key={index}>
                 <img

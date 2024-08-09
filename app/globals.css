@@ -8,6 +8,9 @@
 .animate-marquee2 {
   animation: marquee2 15s linear infinite;
 }
+.animate-marquee3 {
+  animation: marquee3 15s linear infinite;
+}
   
   @keyframes marquee {
     0% { transform: translateX(0); }
@@ -17,4 +20,8 @@
   @keyframes marquee2 {
     0% { transform: translateX(0); }
     100% { transform: translateX(100%); }
+  }
+  @keyframes marquee3 {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
   }

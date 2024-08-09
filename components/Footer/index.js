@@ -2,10 +2,9 @@
 import React from 'react';
 const Footer = () => {
   return (
-    <div className='w-full h-80  bg-red-300'>
-            <div className='w-full h-8 flex justify-center items-start flex-col px-12 gap-2'>
-    <div className='w-full h-0.5 bg-divider1 rounded-sm'></div>
-    <h5 className='text-divider2 text-sm font-medium'>Footer</h5>
+    <div className='w-full h-40  bg-white'>
+            <div className='w-full h-10 flex justify-center items-center'>
+              <h1 className='text-secondary1 text-normal font-normal cursor-default'>© 2024 Daniel Bekhbat Jose Alberto | All rights reserved</h1>
     </div>
     </div>
   );
