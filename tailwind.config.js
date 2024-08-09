@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         'purple1' : "#6921C5",
         'purple2' : "#9421dc",
+        'purple3' : "#442762",
         'black3' : "#1f1f1f",
         'black4' : "#1e1e1e",
         'divider1' : "#cac4d0",
