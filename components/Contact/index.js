@@ -4,19 +4,19 @@ const ContactInfo = () => {
   const SocialLink = [
     {
       image: '/socialIcon1.svg',
-      link: ''
+      link: 'https://x.com/danieru1115'
     },
     {
       image: '/socialIcon2.svg',
-      link: ''
+      link: 'https://www.facebook.com/Daniel.Bekhbat/'
     },
     {
       image: '/socialIcon3.svg',
-      link: ''
+      link: 'https://www.instagram.com/hyperdanirio/'
     },
     {
       image: '/socialIcon4.svg',
-      link: ''
+      link: 'https://www.linkedin.com/in/daniel-bekhbat-31637126a/'
     }
   ]
   return (
