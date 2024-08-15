@@ -1,25 +1,30 @@
 'use client'
 import React, { useRef, useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import { WorkData } from '@/app/data/PreviousWorkInfo';
 const PreviousWork = () => {
 
   const [previousWork, setPreviousWork] = useState([]);
   const marqueeRef = useRef(null);
+  const router = useRouter();
   useEffect(() => {
     setPreviousWork(WorkData);
   }, []);
   
     return (
       <div className='w-full h-[375px] px-12 mb-8'>
-        <div className='w-full h-8 flex justify-center items-start flex-col gap-2'>
+        <div className='w-full h-10 flex justify-center items-start flex-col gap-2'>
           <div className='w-full h-0.5 bg-divider1 rounded-sm'></div>
+          <div className='flex justify-between items-center w-full'>
           <h5 className='text-divider2 text-sm font-medium'>Tech Related Work</h5>
+          <a onClick={() => router.push('/moreWork')} className='text-divider2 text-sm font-medium hover:font-semibold hover:text-purple1 cursor-pointer transition-all'>More Works</a>        
+          </div>
         </div>
-        <div className='w-full h-[375px] overflow-x-hidden mt-4'>
-          <div ref={marqueeRef} className={'w-max gap-8 flex animate-marquee ml-8'}>
-            {previousWork.map((item, index) => (
-              <a href={item.link} target="_blank" rel="noopener noreferrer" className='group w-60 h-auto rounded-2xl p-4 border border-solid border-border1 cursor-pointer' key={index}>
+        <div className='w-full h-[375px] overflow-x-hidden mt-4 '>
+          <div ref={marqueeRef} className={'w-max gap-8 flex ml-4'}>
+            {previousWork.slice(0, 5).map((item, index) => (
+              <a href={item.link} target="_blank" rel="noopener noreferrer" className='group w-80 h-auto rounded-2xl p-4 border border-solid border-border1 cursor-pointer' key={index}>
                 <img
                   src={item.image}
                   alt={item.title}
