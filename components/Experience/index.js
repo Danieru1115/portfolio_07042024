@@ -1,40 +1,13 @@
 import React, { useRef, useState, useEffect } from 'react';
+import { experienceData} from '../../app/data/ExperienceInfo';
 
 const ExperienceWork = () => {
-  const ExperienceInfo = [
-    {
-      title: "ETT Inner Software",
-      role: "Software Development",
-      ranking: "8",
-      company: "ErdenesTavanTolgoi"
-    },
-    {
-      title: "ETT Inner Software",
-      role: "Software Development",
-      ranking: "10",
-      company: "ErdenesTavanTolgoi"
-    },
-    {
-      title: "ETT Inner Software",
-      role: "Software Development",
-      ranking: "4",
-      company: "ErdenesTavanTolgoi"
-    },
-    {
-      title: "ETT Inner Software",
-      role: "Software Development",
-      ranking: "3",
-      company: "ErdenesTavanTolgoi"
-    },
-    {
-      title: "ETT Inner Software",
-      role: "Software Development",
-      ranking: "5",
-      company: "ErdenesTavanTolgoi"
-    }
-  ];
-
+  const [experiences, setExperiences] = useState([]);
   const marqueeRef = useRef(null);
+  useEffect(() => {
+    // Fetch data if necessary (assuming data isn't already available)
+    setExperiences(experienceData); // Or use fetched data from API
+  }, []);
 
   const getStarRating = (rating) => {
     const fullStars = Math.floor(rating / 2);
@@ -62,7 +35,7 @@ const ExperienceWork = () => {
       </div>
 
       <div ref={marqueeRef} className="w-full h-[375px] overflow-x-hidden flex justify-center items-center gap-8 animate-marquee3 ml-8">
-        {ExperienceInfo.map((experience, index) => (
+        {experiences.map((experience, index) => (
           <a href={experience.link} target="_blank" rel="noopener noreferrer" key={index} className="mb-4 py-6 px-12 rounded-2xl border border-divider1 border-solid cursor-default w-80 h-auto flex flex-col justify-center items-start ">
             <div>{getStarRating(parseInt(experience.ranking))}</div>
             <h6 className="text-lg font-medium mt-4">{experience.title}</h6>
