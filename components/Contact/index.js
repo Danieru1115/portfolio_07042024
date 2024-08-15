@@ -20,15 +20,16 @@ const ContactInfo = () => {
     }
   ]
   return (
-    <div className='w-full h-[620px]  px-12'>
-            <div className='w-full h-8 flex items-start flex-col justify-center gap-2'>
+    <div className='w-full h-[620px]  px-12  group '>
+            <div className='w-auto h-8 flex items-start flex-col justify-center gap-2'>
     <div className='w-full h-0.5 bg-divider1 rounded-sm'></div>
     <h5 className='text-divider2 text-sm font-medium'>Contact Info</h5>
     </div>
-    <div className='rounded-2xl border border-divider1 border-solid w-full h-[600px] mt-8 flex justify-center items-center'> 
+ 
+    <div className='rounded-2xl border border-divider1 border-solid w-full h-[600px] mt-8 flex justify-center items-center absolute z-20 bg-white'> 
       <div className='w-1/2 h-full bg-[url("/sakuraTreeAndCastle.png")] bg-left bg-cover rounded-2xl'></div>
 
-      <div className='w-1/2 h-full flex justify-between items-center flex-col px-12 pt-20 gap-16'>
+      <div className='w-1/2 h-full flex justify-between items-center flex-col px-12 pt-20 gap-16 bg-white'>
       <div className='h-auto w-full gap-16'>
         <div className='flex flex-col justify-start items-start ml-12 gap-3'>
           <h1 className='text-4xl text-purple3 font-regular'>Lets get in touch</h1>
@@ -58,6 +59,7 @@ const ContactInfo = () => {
     </div>
       </div>
     </div>
+      <div className='w-full h-[600px] bg-purple2 -z-10  group-hover:blur-lg mt-8 rounded-2xl transition-all'></div>
     </div>
   );
 };

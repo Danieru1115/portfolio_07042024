@@ -32,9 +32,9 @@ const ExperienceWork = () => {
     <div className="w-full h-80  px-12 mb-8">
       <div className="w-full h-8 flex justify-center items-start flex-col gap-2">
       <div className='w-full h-0.5 bg-divider1 rounded-sm'></div>
-          <div className='flex justify-between items-center w-full'>
+          <div className='flex justify-between items-center w-full px-2'>
           <h5 className='text-divider2 text-sm font-medium'>Work Experience</h5>
-          <a onClick={() => router.push('/moreExperiences')} className='text-divider2 text-sm font-medium hover:font-semibold hover:text-purple1 cursor-pointer transition-all'>More Experience</a>        
+          <a onClick={() => router.push('/moreExperiences')} className='text-divider2 text-sm font-medium hover:font-semibold hover:text-purple1 cursor-pointer transition-all'>More</a>        
           </div>
       </div>
 

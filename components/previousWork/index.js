@@ -16,9 +16,9 @@ const PreviousWork = () => {
       <div className='w-full h-[375px] px-12 mb-8'>
         <div className='w-full h-10 flex justify-center items-start flex-col gap-2'>
           <div className='w-full h-0.5 bg-divider1 rounded-sm'></div>
-          <div className='flex justify-between items-center w-full'>
+          <div className='flex justify-between items-center w-full px-2'>
           <h5 className='text-divider2 text-sm font-medium'>Tech Related Work</h5>
-          <a onClick={() => router.push('/moreWork')} className='text-divider2 text-sm font-medium hover:font-semibold hover:text-purple1 cursor-pointer transition-all'>More Works</a>        
+          <a onClick={() => router.push('/moreWork')} className='text-divider2 text-sm font-medium hover:font-semibold hover:text-purple1 cursor-pointer transition-all'>More</a>        
           </div>
         </div>
         <div className='w-full h-[375px] overflow-x-hidden mt-4 '>
