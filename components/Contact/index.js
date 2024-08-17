@@ -29,7 +29,7 @@ const ContactInfo = () => {
     <div className='rounded-2xl border border-divider1 border-solid w-full h-[600px] mt-8 flex justify-center items-center md:absolute z-20 bg-white'> 
       <div className='w-1/2 h-full bg-[url("/sakuraTreeAndCastle.png")] bg-left bg-cover rounded-2xl hidden md:flex'></div>
 
-      <div className=' w-full md:w-1/2 h-full flex justify-between items-center flex-col px-6 md:px-12 md:pt-20 pt-16 gap-8 md:gap-16 bg-white'>
+      <div className=' w-full md:w-1/2 h-full flex justify-between items-center flex-col px-4 md:px-12 md:pt-20 pt-16 gap-8 md:gap-16 bg-white'>
       <div className='h-auto w-full gap-16'>
         <div className='flex flex-col justify-start items-start ml-12 gap-3'>
           <h1 className=' text-3xl lg:text-4xl text-purple3 font-regular'>Lets get in touch</h1>
@@ -38,11 +38,11 @@ const ContactInfo = () => {
         </div>
         <div className='gap-6 mt-16 ml-2 md:ml-12'>
           <div className='flex justify-start items-center gap-8'>
-            <img src="/Mail.svg"></img>
+            <img className='w-10 lg:w-12 h-full' src="/Mail.svg"></img>
             <h2 className=' text-lg lg:text-2xl text-divider2'>danieru1115@proton.me</h2>
           </div>
           <div className='flex justify-start items-center gap-8'>
-            <img src="/Phone.svg"></img>
+            <img className='w-10 lg:w-12 h-full' src="/Phone.svg"></img>
             <h2 className=' text-lg lg:text-2xl text-divider2'>+976 8843 2340</h2>
           </div>
         </div>
