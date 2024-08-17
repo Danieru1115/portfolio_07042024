@@ -38,13 +38,13 @@ const Pay = () => {
 
   return (
     <div className='w-full h-auto flex justify-center items-start flex-col'>
-    <div className='w-full h-8 flex justify-center items-start flex-col lg:px-12 gap-2'>
+    <div className='w-full h-8 flex justify-center items-start flex-col px-2 lg:px-12 gap-2'>
     <div className='w-full h-0.5 bg-divider1 rounded-sm'></div>
     <h5 className='text-divider2 text-sm font-medium'>Pricing</h5>
     </div>
-    <div className="w-full h-[50rem] flex justify-center items-center flex-col lg:flex-row gap-16 lg:px-16 py-12">
+    <div className="w-full h-110 md:h-[100rem] lg:h-[50rem] flex justify-center items-center flex-col lg:flex-row gap-16 px-12 lg:px-16 py-12">
       {PaymentInfo.map((item, index) => (
-        <div key={index} className='w-1/3 h-[600px] cursor-pointer group rounded-3xl hover:w-[640px] transition-all duration-500 p-8 flex justify-center items-center flex-col border-solid border-border1 border'>
+        <div key={index} className=' w-full lg:w-1/3 h-[600px] cursor-pointer group rounded-3xl hover:w-[24rem] lg:hover:w-[640px] transition-all duration-500 p-8 flex justify-center items-center flex-col border-solid border-border1 border'>
           <div className='w-full h-3/4 flex justify-start items-start flex-col gap-8 mt-4'>
             <div className=''>
               <h2 className='text-2xl font-semibold text-purple2'>{item.title}</h2>

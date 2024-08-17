@@ -12,7 +12,7 @@ import ArtWork from "@/components/artWork";
 export default function Home() {
   
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between bg-white gap-20">
+    <main className="flex min-h-screen flex-col items-center justify-between bg-white gap-12 md:gap-40 xl:gap-20">
       <Header/>
       <Head/>
       <Pay/>
