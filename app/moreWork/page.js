@@ -18,7 +18,7 @@ export default function PreviousWork (){
 <path d="M20 4V5.4C20 8.76031 20 10.4405 19.346 11.7239C18.7708 12.8529 17.8529 13.7708 16.7239 14.346C15.4405 15 13.7603 15 10.4 15H4M4 15L9 10M4 15L9 20" stroke="purple" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
 </svg>
 </button></div>
-                <div className="w-1/3 h-full flex justify-center items-center"><h1 className="text-lg md:text-xl  font-semibold text-purple2">Job Experiences</h1></div>
+                <div className="w-1/3 h-full flex justify-center items-center"><h1 className="text-lg md:text-xl  font-semibold text-divider2">Job Experiences</h1></div>
                 <div className="w-1/3 h-full"></div>
             </div>
             <div className="flex-justify-center items-start py-4 mt-20">

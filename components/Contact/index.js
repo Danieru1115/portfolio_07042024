@@ -31,7 +31,7 @@ const ContactInfo = () => {
 
       <div className=' w-full md:w-1/2 h-full flex justify-between items-center flex-col px-4 md:px-12 md:pt-20 pt-16 gap-8 md:gap-16 bg-white'>
       <div className='h-auto w-full gap-16'>
-        <div className='flex flex-col justify-start items-start ml-1 md:ml-12 gap-3'>
+        <div className='flex flex-col justify-start items-start ml-2 md:ml-12 gap-3'>
           <h1 className=' text-3xl lg:text-4xl text-purple3 font-regular'>Lets get in touch</h1>
           <h2 className=' text-base lg:text-lg text-divider2 font-regular'>Any jobs or questions for me?
           Just write me a message.</h2>
