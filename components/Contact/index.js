@@ -36,14 +36,14 @@ const ContactInfo = () => {
           <h2 className=' text-base lg:text-lg text-divider2 font-regular'>Any jobs or questions for me?
           Just write me a message.</h2>
         </div>
-        <div className='gap-6 mt-16 ml-12'>
+        <div className='gap-6 mt-16 ml-2 md:ml-12'>
           <div className='flex justify-start items-center gap-8'>
             <img src="/Mail.svg"></img>
-            <h2 className=' text-xl lg:text-2xl text-divider2'>danieru1115@proton.me</h2>
+            <h2 className=' text-lg lg:text-2xl text-divider2'>danieru1115@proton.me</h2>
           </div>
           <div className='flex justify-start items-center gap-8'>
             <img src="/Phone.svg"></img>
-            <h2 className=' text-xl lg:text-2xl text-divider2'>+976 8843 2340</h2>
+            <h2 className=' text-lg lg:text-2xl text-divider2'>+976 8843 2340</h2>
           </div>
         </div>
       </div>

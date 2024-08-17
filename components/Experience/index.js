@@ -29,7 +29,7 @@ const ExperienceWork = () => {
   };
 
   return (
-    <div className="w-full h-80  px-12 mb-8">
+    <div className="w-full h-80 px-4  md:px-12 mb-8">
       <div className="w-full h-8 flex justify-center items-start flex-col gap-2">
       <div className='w-full h-0.5 bg-divider1 rounded-sm'></div>
           <div className='flex justify-between items-center w-full px-2'>
