@@ -26,7 +26,7 @@ const ContactInfo = () => {
     <h5 className='text-divider2 text-sm font-medium'>Contact Info</h5>
     </div>
  
-    <div className='rounded-2xl border border-divider1 border-solid w-full h-[600px] mt-8 flex justify-center items-center absolute z-20 bg-white'> 
+    <div className='rounded-2xl border border-divider1 border-solid w-full h-[600px] mt-8 flex justify-center items-center md:absolute z-20 bg-white'> 
       <div className='w-1/2 h-full bg-[url("/sakuraTreeAndCastle.png")] bg-left bg-cover rounded-2xl hidden md:flex'></div>
 
       <div className=' w-full md:w-1/2 h-full flex justify-between items-center flex-col px-6 md:px-12 md:pt-20 pt-16 gap-8 md:gap-16 bg-white'>
@@ -59,7 +59,7 @@ const ContactInfo = () => {
     </div>
       </div>
     </div>
-      <div className='w-full h-[600px] bg-purple2 -z-10  group-hover:blur-lg mt-8 rounded-2xl transition-all'></div>
+      <div className='w-full h-[600px] bg-purple2 -z-10  group-hover:blur-lg mt-8 rounded-2xl transition-all hidden lg:flex'></div>
     </div>
   );
 };

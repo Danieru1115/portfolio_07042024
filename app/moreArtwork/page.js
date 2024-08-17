@@ -14,8 +14,8 @@ export default function ArtWork (){
 
     return(
         <div className="w-full h-full flex flex-col justify-start items-center px-6 gap-12">
-            <div className="flex justify-between items-center w-full h-20 bg-white/50 backdrop-blur-md top-0 left-0 fixed  z-50 px-8">
-                <div className="w-1/3 h-full flex justify-start items-center "><button onClick={() => router.back()}  className=" rounded-full p-1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div className="flex justify-between items-center w-full h-16 lg:h-24 bg-white/50 backdrop-blur-md top-0 left-0 fixed  z-50 px-8">
+                <div className="w-1/3 h-full flex justify-start items-center "><button onClick={() => router.back()}  className=" rounded-full p-1 w-10 lg:w-12 h-full"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M20 4V5.4C20 8.76031 20 10.4405 19.346 11.7239C18.7708 12.8529 17.8529 13.7708 16.7239 14.346C15.4405 15 13.7603 15 10.4 15H4M4 15L9 10M4 15L9 20" stroke="purple" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
 </svg>
 </button></div>
